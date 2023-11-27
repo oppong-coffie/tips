@@ -1,0 +1,87 @@
+body{
+    background: url('./images/forest.jpg') center/cover no-repeat fixed;
+padding: 0;
+margin: 0;
+}
+.number{
+    color: green;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50%);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+    width: 25%;
+    height: 27vh;
+    color: rgb(7, 1, 90);
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+}
+.text-space{
+    height: 14vh;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.btn-container{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 20px;
+    padding-left: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+#btnal {
+    background: teal;
+    color: aqua;
+    border-radius: 8px;
+    padding: 0.88rem;
+    font-size: 0.83rem;
+    cursor: pointer;
+  }
+  #btnal.rise-shake {
+    animation: jump-shaking 12s infinite;
+  }
+
+  
+  @keyframes jump-shaking {
+    0% {  
+      transform: translateX(0) 
+  }
+    25% { 
+      transform: translateY(-9px) 
+  }
+    35% { 
+      transform: translateY(-9px) rotate(18deg) 
+  }
+    55% { 
+      transform: translateY(-9px) rotate(-18deg) 
+  }
+    65% { 
+      transform: translateY(-9px) rotate(18deg) 
+  }
+    70% { 
+      transform: translateY(-9px) rotate(-18deg) 
+  }
+  75% {
+      transform: translateY(0) rotate(0)
+      }
+    100% { 
+      transform: translateY(0) rotate(0) 
+  }
+  }
+#next{
+    
+}
+#previous{
+
+}
+#random{
+
+}
